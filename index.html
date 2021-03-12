@@ -34,7 +34,7 @@
             var usrNum = parseInt(prompt('choose a number between 1 and 5'))
             var pcNum = Math.floor(Math.random()*5) + 1;
             var isEven = ((pcNum + usrNum)  % 2) == 0;
-            var sum = '';
+            var isEvenStr = '';
             
             if (usrNum < 1 || usrNum > 5){
         
@@ -44,19 +44,22 @@
             var usrGuess = prompt('Odd or even?').toLowerCase();
             
             if (isEven){
-                sum += 'even'
+                isEvenStr += 'even'
             }
             else{
-                sum += 'odd'
+                isEvenStr += 'odd'
             }
 
-            var usrWin = (sum == usrGuess);
+            var usrWin = (isEvenStr == usrGuess);
 
 
             return console.log('your number: ' + usrNum + ' -','random number: ' + pcNum + ' -','sum: ' + (usrNum + pcNum) + ' -','your guess: ' + usrGuess + ' -', usrWin)
         }
 
-        betEvenOdd()
+
+        // isPalindrome();
+        // betEvenOdd();
+
     </script>
 
 
