@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // definisco la funzione
+        function isPalindrome (){
+
+            var word = prompt('type a word')
+            var revWord = '';
+            var isPalindrome = false;
+
+            for (i=(word.length - 1); i >= 0; i--){
+            
+                revWord += word[i]
+            }
+
+            if (word == revWord){
+                isPalindrome = !isPalindrome
+            }
+
+            return {
+                'word': word,
+                'is palindrome': isPalindrome
+            }
+        }
+
+        console.log(isPalindrome());
+
+    </script>
+
+
+</body>
+</html>
